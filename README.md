@@ -12,6 +12,7 @@ If you are using the `5.15.136-tegra` kernel, you can directly replace the `uvcv
    ```
 3. Replace it with the patched version:
    ```bash
+   sudo rmmod uvcvideo
    sudo cp path/to/new/uvcvideo.ko /lib/modules/$(uname -r)/kernel/drivers/media/usb/uvc/
    sudo depmod -a
    sudo modprobe uvcvideo
